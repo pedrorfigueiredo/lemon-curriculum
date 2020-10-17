@@ -7,8 +7,9 @@ function Navbar() {
       <NavItem exact to="/">
         Perfil
       </NavItem>
-      <NavItem to="/education">Formação</NavItem>
       <NavItem to="/skills">Habilidades</NavItem>
+      <NavItem to="/experience">Experiência</NavItem>
+      <NavItem to="/education">Formação</NavItem>
       <NavItem to="/certifications">Certificações</NavItem>
     </Wrapper>
   );

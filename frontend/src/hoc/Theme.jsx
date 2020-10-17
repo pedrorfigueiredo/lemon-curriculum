@@ -20,8 +20,9 @@ const lemon = {
   fontSize: {
     small: '0.8em',
     medium: '1em',
-    large: '1.2em',
-    huge: '1.4em',
+    large: '1.4em',
+    huge: '1.6em',
+    gigantic: '1.8em',
   },
 };
 
