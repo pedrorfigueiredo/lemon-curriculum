@@ -9,6 +9,8 @@ import {
 import Navbar from './components/Navbar';
 import Profile from './pages/Profile';
 import Skills from './pages/Skills';
+import Experience from './pages/Experience';
+import Education from './pages/Education';
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
       <Switch>
         <Route path="/" exact component={Profile} />
         <Route path="/skills" component={Skills} />
-        <Route path="/experience" component={Profile} />
+        <Route path="/education" component={Education} />
+        <Route path="/experience" component={Experience} />
         <Route path="/education" component={Profile} />
         <Route path="/certifications" component={Profile} />
         <Redirect to="/" />

@@ -14,6 +14,7 @@ function MainSkills() {
         <Card>Redux</Card>
         <Card>Styled Components</Card>
         <Card>Unit Testing</Card>
+        <Card>React Hooks</Card>
         <Card>Node.js</Card>
         <Card>MongoDB</Card>
         <Card>Javascript</Card>

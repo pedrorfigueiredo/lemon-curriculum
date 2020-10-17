@@ -19,7 +19,10 @@ function Skills() {
         Desenvolvimento backend de RESTful APIs com Node.js, Express, MongoDB
       </Item>
       <Item>Conhecimento em Apex, Salesforce</Item>
-      <Item>Desenvolvedor entusiasta de jogos com Unity C#</Item>
+      <Item>
+        Desenvolvedor entusiasta de jogos com Unity C# (Memorize English no
+        Google Play)
+      </Item>
       <Item>Inglês avançado</Item>
       <Item>Responsável, pontual, amigável e entusiasta por tecnologia</Item>
       <Item>

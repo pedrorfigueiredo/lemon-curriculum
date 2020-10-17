@@ -34,8 +34,6 @@ export const Text = styled.p`
 export const Item = styled.span`
   font-size: ${(props) => props.theme.fontSize.medium};
   color: ${(props) => props.theme.fontColor.dark};
-  display: flex;
-  align-items: center;
   padding-bottom: 10px;
   margin-bottom: 10px;
   text-align: justify;
