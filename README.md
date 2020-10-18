@@ -14,14 +14,14 @@ The frontend and the backend servers are separated from each other, granting mor
 ### Frontend
 
 ```sh
-cd ./frontend
+cd frontend/
 npm install
 ```
 
 ### Backend
 
 ```sh
-cd ./backend
+cd backend/
 npm install
 ```
 
@@ -32,7 +32,7 @@ If you want to host your own database, you'll need to change the environment var
 ### Frontend
 
 ```sh
-cd ./frontend
+cd frontend/
 npm start
 ```
 
@@ -41,7 +41,7 @@ Frontend runs on port 3000.
 ### Backend
 
 ```sh
-cd ./backend
+cd backend/
 npm start
 ```
 
@@ -54,14 +54,14 @@ Unit tests are implemented, so you can test your software.
 ### Frontend
 
 ```sh
-cd ./frontend
+cd frontend/
 npm test
 ```
 
 ### Backend
 
 ```sh
-cd ./backend
+cd backend/
 npm test
 ```
 
