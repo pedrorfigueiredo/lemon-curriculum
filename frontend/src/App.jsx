@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
+import Appbar from './components/Appbar';
 import Profile from './pages/Profile';
 import Skills from './pages/Skills';
 import Experience from './pages/Experience';
@@ -17,6 +18,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <Appbar />
       <Switch>
         <Route path="/" exact component={Profile} />
         <Route path="/skills" component={Skills} />

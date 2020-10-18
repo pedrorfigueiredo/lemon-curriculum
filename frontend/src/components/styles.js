@@ -11,6 +11,7 @@ export const PageWrapper = styled.div`
   background: ${(props) => props.theme.color.secondary};
   @media (max-width: 768px) {
     margin-left: 0;
+    margin-top: 50px;
   }
 `;
 
