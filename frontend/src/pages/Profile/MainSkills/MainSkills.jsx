@@ -1,8 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { v1 as uuid } from 'uuid';
 import { Title, LemonIcon } from '../../../components/styles';
 import { CardList, Card } from './styles';
 
 function MainSkills() {
+  const { skills } = useSelector((state) => state.profile.data);
+
   return (
     <div>
       <Title>
@@ -10,16 +14,7 @@ function MainSkills() {
         Habilidades
       </Title>
       <CardList>
-        <Card>React.js</Card>
-        <Card>Redux</Card>
-        <Card>Styled Components</Card>
-        <Card>Unit Testing</Card>
-        <Card>React Hooks</Card>
-        <Card>Node.js</Card>
-        <Card>MongoDB</Card>
-        <Card>Javascript</Card>
-        <Card>Salesforce</Card>
-        <Card>Unity C#</Card>
+        {skills && skills.map((skill) => <Card key={uuid()}>{skill}</Card>)}
       </CardList>
     </div>
   );

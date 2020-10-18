@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import {
   Wrapper,
   ImageContainer,
@@ -11,32 +12,27 @@ import {
 import { Title, Text } from '../../../components/styles';
 
 function BasicInfo() {
+  const { name, imageUrl, job, linkedin, github } = useSelector(
+    (state) => state.profile.data
+  );
   return (
     <Wrapper>
       <ImageContainer>
-        <Image src="https://avatars1.githubusercontent.com/u/60073971?v=4" />
+        <Image src={imageUrl} />
       </ImageContainer>
       <Info>
-        <Name>Pedro Ramalho Figueirêdo</Name>
-        <Title>Desenvolvedor Frontend</Title>
-        <a
-          href="https://www.linkedin.com/in/pedro-figueiredo-024ba2114"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Name>{name}</Name>
+        <Title>{job}</Title>
+        <a href={linkedin} target="_blank" rel="noopener noreferrer">
           <Text>
             <LinkedinIcon />
-            /in/pedro-figueiredo-024ba2114
+            Linkedin
           </Text>
         </a>
-        <a
-          href="https://www.github.com/pedrorfigueiredo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={github} target="_blank" rel="noopener noreferrer">
           <Text>
             <GithubIcon />
-            /pedrorfigueiredo
+            Github
           </Text>
         </a>
       </Info>

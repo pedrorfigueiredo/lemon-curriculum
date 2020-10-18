@@ -1,4 +1,6 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { v1 as uuid } from 'uuid';
 import {
   PageWrapper,
   Title,
@@ -8,20 +10,21 @@ import {
 } from '../../components/styles';
 
 function Certifications() {
+  const { certifications } = useSelector((state) => state.profile.data);
   return (
     <PageWrapper>
       <Title>
         <LemonIcon />
         Certificações
       </Title>
-      <Item>
-        <Text>Salesforce Developer I</Text>
-        <Text>
-          Desenvolvedor lógicas de negócio e interfaces de usuário através das
-          capacidades programáticas da Lightning Platform, extendendo o
-          Salesforce com o uso de Apex, Visualforce e Lightning Components
-        </Text>
-      </Item>
+      {certifications &&
+        certifications.length > 0 &&
+        certifications.map((item) => (
+          <Item key={uuid()}>
+            <Text>{item.title}</Text>
+            <Text>{item.description}</Text>
+          </Item>
+        ))}
     </PageWrapper>
   );
 }

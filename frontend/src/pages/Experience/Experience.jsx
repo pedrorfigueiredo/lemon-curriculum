@@ -1,4 +1,6 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { v1 as uuid } from 'uuid';
 import {
   PageWrapper,
   Title,
@@ -8,32 +10,29 @@ import {
 } from '../../components/styles';
 
 function Experience() {
+  const { experience } = useSelector((state) => state.profile.data);
   return (
     <PageWrapper>
       <Title>
         <LemonIcon />
         Experiência
       </Title>
-      <Item>
-        <Text>Outubro/2019 - Hoje</Text>
-        <Text>Freelancer</Text>
-        <Text>Cargo: Desenvolvedor Frontend</Text>
-        <Text>
-          Principais atividades: Desenvolvimento de aplicações web SPA (Single
-          Page Applications) com React (Frontend) e RESTful APIs em Node.js,
-          Express, MongoDB (Backend)
-        </Text>
-      </Item>
-      <Item>
-        <Text>Novembro/2019 - Abril/2017</Text>
-        <Text>Brisa Estruturas Metálicas</Text>
-        <Text>Cargo: Estagiário de Engenheiro Estrutural</Text>
-        <Text>
-          Principais atividades: Cálculo estrutural, dimensionamento de
-          elementos construtivos; projetos estruturais de estrutura metálica e
-          concreto; projetos arquitetônicos; orçamentação
-        </Text>
-      </Item>
+      {experience &&
+        experience.length > 0 &&
+        experience.map((item) => (
+          <Item key={uuid()}>
+            <Text>{item.date}</Text>
+            <Text>{item.company}</Text>
+            <Text>
+              Cargo:
+              {item.role}
+            </Text>
+            <Text>
+              Principais atividades:
+              {item.activities}
+            </Text>
+          </Item>
+        ))}
     </PageWrapper>
   );
 }

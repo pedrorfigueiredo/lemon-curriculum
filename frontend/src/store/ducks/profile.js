@@ -3,16 +3,23 @@ import axios from 'axios';
 // Action Types
 export const Types = {
   LOAD_PROFILE: 'profile/LOAD_PROFILE',
+  SET_ERROR: 'profile/ERROR',
 };
 
 // Reducer
-const initialState = {};
+const initialState = { data: {}, error: '' };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case Types.LOAD_PROFILE:
       return {
-        ...action.payload,
+        ...state,
+        data: action.payload,
+      };
+    case Types.SET_ERROR:
+      return {
+        ...state,
+        error: action.payload,
       };
     default:
       return state;
@@ -25,13 +32,12 @@ export const fetchProfile = () => async (dispatch) => {
     const response = await axios.get(
       `${process.env.REACT_APP_BACKEND_URL}/profile`
     );
-    console.log(response.data);
     dispatch({ type: Types.LOAD_PROFILE, payload: response.data });
   } catch (err) {
-    if (err.response.status === 404) {
-      console.log('askdjlsanfkednglkwnlwf');
-    }
-    console.log(err.response.status);
+    dispatch({
+      type: Types.SET_ERROR,
+      payload: 'Problema em se comunicar com o servidor. Tente novamente',
+    });
   }
 };
 

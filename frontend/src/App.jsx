@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import { fetchProfile } from './store/ducks/profile';
 import Navbar from './components/Navbar';
@@ -15,16 +15,20 @@ import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Certifications from './pages/Certifications';
+import Register from './pages/Register';
+import Modal from './components/Modal';
 
 function App() {
   const dispatch = useDispatch();
+  const error = useSelector((state) => state.profile.error);
 
   useEffect(() => {
     dispatch(fetchProfile());
-  }, []);
+  }, [dispatch]);
 
   return (
     <Router>
+      {error && <Modal>{error}</Modal>}
       <Navbar />
       <Appbar />
       <Switch>
@@ -33,6 +37,7 @@ function App() {
         <Route path="/experience" component={Experience} />
         <Route path="/education" component={Education} />
         <Route path="/certifications" component={Certifications} />
+        <Route path="/register" component={Register} />
         <Redirect to="/" />
       </Switch>
     </Router>
