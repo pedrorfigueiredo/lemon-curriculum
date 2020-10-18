@@ -12,23 +12,27 @@ function Experience() {
     <PageWrapper>
       <Title>
         <LemonIcon />
-        Experience
+        Experiência
       </Title>
       <Item>
-        <Text>Engenharia de Software (cursando)</Text>
-        <Text>Unicesumar / 2019 - 2021</Text>
+        <Text>Outubro/2019 - Hoje</Text>
+        <Text>Freelancer</Text>
+        <Text>Cargo: Desenvolvedor Frontend</Text>
+        <Text>
+          Principais atividades: Desenvolvimento de aplicações web SPA (Single
+          Page Applications) com React (Frontend) e RESTful APIs em Node.js,
+          Express, MongoDB (Backend)
+        </Text>
       </Item>
       <Item>
-        <Text>Mestrado em Tecnologia, Ambiente e Sociedade (cursando)</Text>
-        <Text>UFVJM / 2019 - 2021</Text>
-      </Item>
-      <Item>
-        <Text>Engenharia Civil</Text>
-        <Text>UFVJM / 2012 - 2017</Text>
-      </Item>
-      <Item>
-        <Text>Bacharelado em Ciência e Tecnologia</Text>
-        <Text>UFVJM / 2012 - 2014</Text>
+        <Text>Novembro/2019 - Abril/2017</Text>
+        <Text>Brisa Estruturas Metálicas</Text>
+        <Text>Cargo: Estagiário de Engenheiro Estrutural</Text>
+        <Text>
+          Principais atividades: Cálculo estrutural, dimensionamento de
+          elementos construtivos; projetos estruturais de estrutura metálica e
+          concreto; projetos arquitetônicos; orçamentação
+        </Text>
       </Item>
     </PageWrapper>
   );
