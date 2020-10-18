@@ -5,7 +5,7 @@
 Lemon Curriculum is a presentation CV visualization with lemon theme based. The frontend is made in React and the backend in Node.js.
 The web app is responsive, so it is easily adapted for mobiles.
 
-Demo: https://lemon-curriculum.vercel.app/experience
+Demo: https://lemon-curriculum.vercel.app
 
 ## Install
 
