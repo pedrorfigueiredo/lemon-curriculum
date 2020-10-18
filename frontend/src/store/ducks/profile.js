@@ -39,7 +39,6 @@ export const fetchProfile = () => async (dispatch) => {
     const response = await axios.get(
       `${process.env.REACT_APP_BACKEND_URL}/profile`
     );
-    console.log(response);
     dispatch({ type: Types.LOAD_PROFILE, payload: response.data });
     dispatch({ type: Types.SET_LOADING, payload: false });
   } catch (err) {
