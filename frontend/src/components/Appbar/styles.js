@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   width: 100vw;
   background: ${(props) => props.theme.color.primary};
   display: none;
+  z-index: 2;
   @media (max-width: 768px) {
     display: flex;
   }

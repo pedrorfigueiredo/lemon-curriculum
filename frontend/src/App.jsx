@@ -16,10 +16,12 @@ import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Certifications from './pages/Certifications';
 import Modal from './components/Modal';
+import LoaderPage from './components/LoaderPage';
 
 function App() {
   const dispatch = useDispatch();
   const error = useSelector((state) => state.profile.error);
+  const isLoading = useSelector((state) => state.profile.isLoading);
 
   useEffect(() => {
     dispatch(fetchProfile());
@@ -27,17 +29,21 @@ function App() {
 
   return (
     <Router>
-      {error && <Modal>{error}</Modal>}
       <Navbar />
       <Appbar />
-      <Switch>
-        <Route path="/" exact component={Profile} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/experience" component={Experience} />
-        <Route path="/education" component={Education} />
-        <Route path="/certifications" component={Certifications} />
-        <Redirect to="/" />
-      </Switch>
+      {error && <Modal>{error}</Modal>}
+      {isLoading ? (
+        <LoaderPage />
+      ) : (
+        <Switch>
+          <Route path="/" exact component={Profile} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/experience" component={Experience} />
+          <Route path="/education" component={Education} />
+          <Route path="/certifications" component={Certifications} />
+          <Redirect to="/" />
+        </Switch>
+      )}
     </Router>
   );
 }

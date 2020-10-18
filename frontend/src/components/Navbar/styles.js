@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   background: ${(props) => props.theme.color.primary};
   display: flex;
   flex-direction: column;
+  z-index: 2;
   @media (max-width: 768px) {
     display: none;
   }
