@@ -15,7 +15,6 @@ import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Certifications from './pages/Certifications';
-import Register from './pages/Register';
 import Modal from './components/Modal';
 
 function App() {
@@ -37,7 +36,6 @@ function App() {
         <Route path="/experience" component={Experience} />
         <Route path="/education" component={Education} />
         <Route path="/certifications" component={Certifications} />
-        <Route path="/register" component={Register} />
         <Redirect to="/" />
       </Switch>
     </Router>

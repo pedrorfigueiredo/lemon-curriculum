@@ -5,7 +5,6 @@ const profileSchema = new mongoose.Schema({
   job: String,
   linkedin: String,
   github: String,
-  image: String,
   imageUrl: String,
   about: String,
   skills: [String],
@@ -14,7 +13,7 @@ const profileSchema = new mongoose.Schema({
     {
       date: String,
       company: String,
-      title: String,
+      role: String,
       activities: String,
     },
   ],

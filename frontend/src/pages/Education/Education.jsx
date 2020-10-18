@@ -22,7 +22,7 @@ function Education() {
         education.map((item) => (
           <Item key={uuid()}>
             <Text>{item.title}</Text>
-            <Text>{`${item.university}/${item.date}`}</Text>
+            <Text>{`${item.university} / ${item.date}`}</Text>
           </Item>
         ))}
     </PageWrapper>
