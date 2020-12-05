@@ -2,7 +2,7 @@ module.exports = {
   name: 'Pedro Ramalho Figueirêdo',
   job: 'Desenvolvedor Frontend',
   linkedin: 'https://www.linkedin.com/in/pedro-figueiredo-024ba2114/',
-  github: 'https://github.com/pedrorfigueiredo',
+  github: 'https://github.com/peramalho',
   imageUrl: 'https://avatars1.githubusercontent.com/u/60073971?v=4',
   about:
     'Comecei minha carreira profissional como engenheiro civil. Durante a graduação, me deparei com a tão famigerada disciplina "Linguagens de Programação" e foi aí que meus olhos se abriram para este incrível mundo da tecnologia. ALgum tempo depois de formado, passei a me dedicar fielmente à programação. Acredito ser uma paixão minha desde novo: entender os computadores. Hoje posso me entitular um desenvolvedor de software. Trabalho atualmente com React e tecnologias front-end. Estou em busca de colaborar com projetos interessantes, aprender sempre e conhecer pessoas bacanas. Tecnologias vem e vão, e é preciso se adaptar a este mundo repleto de mudanças.',
