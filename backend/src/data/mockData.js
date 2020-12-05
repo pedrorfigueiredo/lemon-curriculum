@@ -5,7 +5,7 @@ module.exports = {
   github: 'https://github.com/peramalho',
   imageUrl: 'https://avatars1.githubusercontent.com/u/60073971?v=4',
   about:
-    'Comecei minha carreira profissional como engenheiro civil. Durante a graduação, me deparei com a tão famigerada disciplina "Linguagens de Programação" e foi aí que meus olhos se abriram para este incrível mundo da tecnologia. ALgum tempo depois de formado, passei a me dedicar fielmente à programação. Acredito ser uma paixão minha desde novo: entender os computadores. Hoje posso me entitular um desenvolvedor de software. Trabalho atualmente com React e tecnologias front-end. Estou em busca de colaborar com projetos interessantes, aprender sempre e conhecer pessoas bacanas. Tecnologias vem e vão, e é preciso se adaptar a este mundo repleto de mudanças.',
+    'Comecei minha carreira profissional como engenheiro civil. Durante a graduação, me deparei com a tão famigerada disciplina "Linguagens de Programação" e foi aí que meus olhos se abriram para este incrível mundo da tecnologia. Algum tempo depois de formado, passei a me dedicar fielmente à programação. Acredito ser uma paixão minha desde novo: entender os computadores. Hoje posso me entitular um desenvolvedor de software. Trabalho atualmente com React e tecnologias front-end. Estou em busca de colaborar com projetos interessantes, aprender sempre e conhecer pessoas bacanas. Tecnologias vem e vão, e é preciso se adaptar a este mundo repleto de mudanças.',
   skills: [
     'React.js',
     'Redux',
@@ -41,7 +41,7 @@ module.exports = {
         'Desenvolvimento de aplicações web SPA (Single Page Applications) com React (Frontend) e RESTful APIs em Node.js, Express, MongoDB (Backend)',
     },
     {
-      date: 'Novembro/2019 - Abril/2017',
+      date: 'Novembro/2017 - Abril/2017',
       company: 'Brisa Estruturas Metálicas',
       role: 'Estagiário de Engenheiro Estrutural',
       activities:
